@@ -33,7 +33,7 @@ In the sources folder, you create a resource file `src/main/resources/applicatio
 
 [source, java]
 ----
-include::src/main/resources/application.propertie
+include::src/main/resources/application.properties
 ----
 
 Here, `spring.jpa.hibernate.ddl-auto` can be `none`, `update`, `create`, `create-drop`, refer to the Hibernate documentation for details.
