@@ -16,6 +16,8 @@ import xyz.fullstack.development.domain.User;
 public class MainController {
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
     private SourceRepository sourceRepository;
 
     @GetMapping(path = "/addSource") // Map ONLY GET Requests
@@ -30,6 +32,13 @@ public class MainController {
         source.setPath(path);
         sourceRepository.save(source);
         return "Path Added";
+    }
+
+    @GetMapping(path = "/getSources")
+    public @ResponseBody
+    Iterable<Source> getSource() {
+        // This returns a JSON
+        return sourceRepository.findAll();
     }
 
     @GetMapping(path = "/getUsers")
