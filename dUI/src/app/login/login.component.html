@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6">
+    <h1>Login </h1>
+    <!--<form formGroup="loginForm" (ngSubmit)="onSubmit(loginForm.value)">-->
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input class="form-control" [formControl]="eMail">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="<password></password>" class="form-control" [formControl]="pass">
+        <!--<input type="password" class="form-control" id="pwd" [formControlName]="password">-->
+      </div>
+      <!--<button class="btn btn-default" (click)="login()">Login</button>-->
+
+      <button type="submit" (click)="onSubmit(eMail.value,pass.value)" class="btn btn-default">Login</button>
+    <!--</form>-->
+
+    <!--{{eMail.value | json}}
+     {{pass.value | json}}-->
+  </div>
+</div>
