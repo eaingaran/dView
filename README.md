@@ -17,3 +17,28 @@ This application has 3 components -
 
 
 **For more information on individual components, check out README.md inside the module.
+
+
+Technology Used:
+
+dUI - Angular 5.x
+
+dREST -  Springboot 1.4.1.RELEASE
+                Java 8
+                JPA
+                mysql
+                maven
+                
+dWorker - Springboot 1.4.1.RELEASE
+                Java 8
+                JPA
+                Univocity Parser 2.1.1
+                Apache Commons-io 2.5
+                mysql
+                maven
+
+Recommonded tools:
+
+ dUI - Atom
+ dREST - Intellij Idea
+ dWorker - Intellij Idea
